@@ -1,53 +1,260 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  
+<html lang="en"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
    <head>
-      <title>Brianna Tedlock - Save the Kittens</title>
+	
+      <title>Brianna Tedlock - Save the kittens</title>
       <link rel="stylesheet" type="text/css" href="styles.css">
+		<link href="https://fonts.cdnfonts.com/css/cats-style" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
    </head>
    <body>
-      <h2>I Save Kittens</h2>
-      <div class=header>
-         <h1>Success Stories</h1>
+
+		<div class=header>
+		
+      <h1 class="font-effect-shadow-multiple"><i class='fas'> <br> &#xf6be;</i> Save The Kittens</h1>
          <hr>
          </div>
+
+<i>“The smallest feline is a masterpiece.” – Leonardo da Vinci.</i>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <a href="https://imgur.com/GVSbZVM"><img src="https://i.imgur.com/GVSbZVM.jpg" title="source: imgur.com" style="width:40%" /></a>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <a href="https://imgur.com/lgrA15z"><img src="https://i.imgur.com/lgrA15z.jpg" title="source: imgur.com" style="width:40%" /></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <a href="https://imgur.com/YfFYl1d"><img src="https://i.imgur.com/YfFYl1d.jpg" title="source: imgur.com" style="width:40%" /></a> 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <a href="https://imgur.com/Bi31qCF"><img src="https://i.imgur.com/Bi31qCF.jpg" title="source: imgur.com" style="width:40%" /></a> 
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<h2>Where Did They All Came From?</h2>
+
+<div class="row">
+  <div class="column" style="background-color:Pink;">
          <nav>
             <ul>
                <li>
-                  <a href="#Amy">Amy</a>
+                  <a href="#Background">Background</a>
+               </li>
+               <li>
+                  <a href="#Life">Life Outside</a>
+               </li>
+					<li>
+                  <a href="#Community">Community Cat</a>
+               </li>
+               <li>
+ 						<a href="#TNR">TNR</a>
+               </li>
+
+   				<li>
+ 						<a href="#Help">How You Can Help</a>
+               </li>
+
+
+            </ul>
+         </nav>
+		</div>
+		
+       <div class="column" style="background-color: LightPink;">
+    <nav>
+            <ul>
+               <li>
+                  <a href="#Amy">Mimi</a>
                </li>
                <li>
                   <a href="#Bug">Bug Bug</a>
                </li>
+					<li>
+                  <a href="#Bunny">Bunny</a>
+               </li>
+               <li>
+ 						<a href="#Ollie">Ollie</a>
+               </li>
+
+   				<li>
+ 						<a href="#Alien">Alien</a>
+               </li>
+
 
             </ul>
          </nav>
-      </divheader>
-      
-      <main>
-         <article>
-            <section>
-               <a name="Amy"></a>
-               <h2>Amethyst &hearts;</h2>
-               <p>"This ginger cutie was saved from a pretty awful situation...."</p>
-               <figure>
-                  <a href="https://imgur.com/1EJViSK"><img src="https://i.imgur.com/1EJViSK.jpg" title="source: imgur.com" /></a>
-               <figcaption>"Amy as a kitten."</figcaption>
-               </figure>
-            </section>
-         
-            <section>
-               <a name="Bug"></a>
-               <h2>Bug Bug &hearts;</h2>
-               <p>"This little baby was found outside a neighborhood pool...."</p>
-               <figure>
-                  <a href="https://imgur.com/1EJViSK"><img src="https://i.imgur.com/1EJViSK.jpg" title="source: imgur.com" /></a>
-               <figcaption>"Bug Bug as a kitten."</figcaption>
-               </figure>
-            </section>
-      </article>
-      </main>
-      <footer>
-         <p>&copy; 2023 Brianna Tedlock</p>
-      </footer>
-   </body>
+  </div>
+</div>
+
+     <main>
+<section>
+<a name="Background"></a><br>
+<h2>Background</h2>
+<p>
+Found a kitty at a gas station..
+
+Then in a fence..
+
+Then under the porch...
+</p>
+</section>
+
+<section>
+<a name="Life"></a><br>
+<h2>Life Outside</h2> 
+<p>>A kitten born outside faces many challenges and struggles for survival. These kittens are often born to feral cats or to cats that have been abandoned or lost. They are known as community cats, and they form colonies of cats that live together in outdoor habitats.
+
+The chances of survival for these kittens are low, as they are vulnerable to disease, starvation, and predation. They may also suffer from injuries, such as broken bones, and can face harsh weather conditions. Without human intervention, their life expectancy is relatively short.
+
+Kittens born outside may not have the opportunity to learn to trust and love humans, as they are not socialized to humans at a young age. However, with patience, love, and proper socialization techniques, it is possible to build a relationship with these cats and even adopt them into loving homes.</p>
+</section>
+
+<section>
+<a name="Community"></a><br>
+<h2>Community Cats</h2>
+<p>It is essential to treat community cats with love and compassion, as they are sentient beings that deserve to be treated with respect and kindness. Community cats can benefit from TNR programs, which help to control their population and prevent the suffering of kittens and cats in the wild.
+
+In summary, kittens born outside face many challenges and struggles for survival. They form colonies of cats that live together in outdoor habitats known as cat colonies. Without human intervention, their life expectancy is relatively short. It is essential to treat community cats with love and compassion and to provide them with the care they need to live healthy and happy lives.</p>
+</section>
+
+<section>
+<a name="TNR"></a><br>
+<h2>Trap-Neuter-Release</h2>
+<p>TNR, or trap-neuter-release, is an important method for controlling the population of feral cats. Feral cats are domestic cats that have returned to the wild and are not socialized to humans. TNR works by humanely trapping these cats, having them spayed or neutered, and then releasing them back into their environment. This approach helps to manage the population of feral cats without resorting to euthanasia, which can be cruel and ineffective.
+
+TNR, or trap-neuter-release, is an important method for controlling the population of feral cats and preventing the suffering of kittens and cats in the wild. Feral cats are domestic cats that have returned to the wild and are not socialized to humans. They can suffer from starvation, disease, and injury, and their population can quickly become unmanageable.
+
+TNR not only helps to prevent the suffering of feral cats but also benefits the community and domestic cats. By reducing the population of feral cats, TNR can help reduce the incidence of cat-related problems such as noise, odor, and property damage. It can also reduce the risk of disease transmission between cats, including diseases that can be transmitted to humans.</p>
+</section>
+
+<section>
+<a name="Help"></a><br>
+<h2>How You Can Help</h2>
+<p>>
+Getting involved in TNR is a great way to help cats in need. You can start by contacting local animal shelters or rescue organizations to find out if they have a TNR program. If there isn't a program in your area, consider starting one yourself. TNR requires some training and resources, but there are many resources available to help you get started. By participating in TNR, you can help prevent the suffering of countless innocent kittens and improve the lives of feral cats in your community.
+
+In summary, TNR is an essential method for managing the population of feral cats and preventing the suffering of kittens and cats in the wild.
+</p>
+		<article>
+       <section>
+           <a name="Amy"></a><br>
+				<h2><i class = 'fas'>&#xf1b0;</i><br>MiMi</h2>
+					<p><a href="https://imgur.com/1EJViSK"><img src="https://i.imgur.com/1EJViSK.jpg" title="source: imgur.com" /></a></p>
+<p>"This ginger cutie was saved from a pretty awful situation...."</p>
+<br><br>
+      </section><hr>
+		
+        <section>
+           <a name="Bug"></a>
+      		<h2><i class = 'fas'>&#xf1b0;</i><br>Bug Bug</h2>
+				<p><a href="https://imgur.com/ETwctpn"><img src="https://i.imgur.com/ETwctpn.jpg" title="source: imgur.com" /></a><p>"She is the tiniest kitty."</p> <br<br>
+				
+            </section><hr>
+				
+
+
+  				<section>
+               <a name="Bunny"></a>
+               <h2><i class = 'fas'>&#xf1b0;</i><br>Bunny</h2>
+					<p><a href="https://imgur.com/08qYHkO"><img src="https://i.imgur.com/08qYHkO.jpg" title="source: imgur.com" /></a></p>
+           		<p>"One crisp Fall afternoon, I was working on some homework in my second floor bedroom when I saw something rustling in the leaves below followed by a faint meowing sound. I went outside investigate when suddenly I saw a fluffy little kitten. I must have startled him him bc he lunged for the fence. He was much to small to clear it amd instead the kitten had gotten its head through the fence and couldn't get it out.
+
+
+	I quickly realized that the kitten needed help, so I carefully lifted him out of the fence and took him inside with me. Our neighborhood had a few stray dogs that hunted and killed any cats they came across, so I knew inhad to help. I checked the kitten for any injuries, and thankfully, he was okay.
+
+	The kitten was so cute and playful, and I decided to name him Bunny because of his white and tan fur that reminded me of a little rabbit. Bunny was a bit scared at first, but soon he warmed up to me and became very attached. He would follow me everywhere and loved to cuddle up on my lap.
+<br>
+	As hard as I tried to find his mother or any of his siblings, I unfortunately had no luck. As the days went by, Bunny grew stronger and more confident. He loved to play with toys and would chase after anything that moved. Bunny was such a joy to have around, and I knew that I couldn't let him go.
+<br>
+	So, I decided to adopt Bunny and give him a forever home. From that day on, Bunny became a part of my family, and we had many happy adventures together. Bunny was no longer a kitten stuck in a fence but a beloved member of our family, and we were all grateful to have him in our lives."</p>
+            </section><hr>
+
+    			<section>
+               <a name="Ollie"></a>
+					<h2><i class = 'fas'>&#xf1b0;</i><br>Ollie</h2>
+					   <p><a href="https://imgur.com/cXX1nOZ"><img src="https://i.imgur.com/cXX1nOZ.jpg" title="source: imgur.com" /></a></p>
+              
+
+					<p><a href="https://imgur.com/ZGAnWDb"><img src="https://i.imgur.com/ZGAnWDb.jpg" title="source: imgur.com" /></a></p>
+					
+               <p>"Once upon a time, there was a small orange kitten who found himself lost and alone inside a gas station. He was thirsty, hungry, and scared, and meowed for help, hoping someone would hear him.
+
+Sadly, the people at the gas station didn't want to help him. Instead, they tried to chase him off, thinking he was just another stray cat. But the kitten refused to leave, and he kept meowing loudly, hoping someone would take pity on him.
+
+That's when I arrived. I heard the kitten's cries and decided to investigate. When I saw the poor little guy, I knew I had to do something to help him. I scooped him up and brought him home with me.
+
+My friend had always talked about getting a ginger kitten, and when I showed him the little orange ball of fur, he was overjoyed. He decided to adopt him on the spot, and we named him "Ollie."
+
+Ollie quickly adapted to his new home, and he became a beloved member of our little family. He was playful, affectionate, and always up for a cuddle. We loved him dearly, and he brought us so much joy and happiness.
+
+In the end, we were grateful that we had found Tiger and given him the love and care he deserved. And we knew that he was just as happy to have found us as we were to have found him."</p>
+
+              
+              
+               
+				</section><hr>
+				
+				<section>
+               <a name="Alien"></a>
+               <h2><i class = 'fas'>&#xf1b0;</i><br>Alien</h2>
+					<p> "Found in a vent"</p>
+					
+					<p><a href="https://imgur.com/jY1uQCN"><img src="https://i.imgur.com/jY1uQCN.jpg" title="source: imgur.com" /></a></p>
+				
+				</section>
+				<hr>
+		</article>
+   </main>
+  
+	<footer>
+    <p>&copy; 2023 Brianna Tedlock</p>
+ 	</footer>
+
+ </body>
 </html>
