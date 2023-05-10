@@ -1,27 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 .header {
-    display: block;
+     padding: 30px;
      text-align: center;
      background-color: RosyBrown;
      color: MistyRose;
-     font-size: 30px
+     font-size: 35px
+ }
+ .nav {
+    padding:
  }
  
+ article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: mistyrose;
+    height: 300px;
+ }
+
  body {
-     background-color: #eeac99;
-     
+    text-align: center;
  }
- 
  
  img {
-     float: center;
-     border-radius: 50px;
-     width: 200px;
+    float: center;
+    border-radius: 50px;
+    width: 200px;
  
  }
  
  p {
-     text-align: center;
+    text-align: center;
  }
  
  footer { 
@@ -31,19 +40,25 @@
      color: MistyRose;
      
      }
-
-i {
-
-}
-     
- ul {
+nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: lightpink;
+        padding: 20px;
+      }
+ nav ul {
      list-style: none;
      padding: 0px;
      }	
-     
- ul li:before {
-     content: '\1F43E';
-     margin: 0 1em;
+
+    
+
+
+ section::after {
+    content: "";
+    display: table;
+    clear: both;
  }
      
  h2 {
@@ -55,29 +70,18 @@ i {
  body {
    font-family: "Sofia", sans-serif;
    font-size: 15px;
+   text-align: center;
  }
  
  * {
    box-sizing: border-box;
  }
  
- 
- .column {
-   float: center;
-   width: 12%;
-   padding: 10px;
-   height: 150px;
- }
- 
- 
- .row:after {
-   content: "";
-   display: table;
-   clear: both;
- }
+
  
  h4 {
     text-align: center;
+   
 
  }
  
@@ -122,5 +126,7 @@ i {
  
  .slideshow-container {
     text-align: center;
+    padding: 20px;
+    height: auto;
  }
 
