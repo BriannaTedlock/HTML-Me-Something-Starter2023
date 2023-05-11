@@ -1,84 +1,33 @@
 <!DOCTYPE html>  
-<html lang="en"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-   <head>
-	
-      <title>Brianna Tedlock - Save the kittens</title>
+<html lang="en">
+<head>
+<title>Brianna Tedlock - Save the kittens</title>       
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
       <link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="stylesheet" href="path/to/fontawesome.min.css">
 		<link href="https://fonts.cdnfonts.com/css/cats-style" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-
-		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    </head>
-   <body>
 
-		<div class=header>
+	<div class=header>
 		
-      <h1 class="font-effect-shadow-multiple"><i class='fas'> <br> &#xf6be;</i> Save The Kittens</h1>
-         <hr>
-         </div>
-
-<i>“The smallest feline is a masterpiece.” – Leonardo da Vinci.</i>
-
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
-  <a href="https://imgur.com/GVSbZVM"><img src="https://i.imgur.com/GVSbZVM.jpg" title="source: imgur.com" style="width:40%" /></a>
-  </div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-  <a href="https://imgur.com/lgrA15z"><img src="https://i.imgur.com/lgrA15z.jpg" title="source: imgur.com" style="width:40%" /></a>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <a href="https://imgur.com/YfFYl1d"><img src="https://i.imgur.com/YfFYl1d.jpg" title="source: imgur.com" style="width:40%" /></a> 
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">4 / 4</div>
-  <a href="https://imgur.com/Bi31qCF"><img src="https://i.imgur.com/Bi31qCF.jpg" title="source: imgur.com" style="width:40%" /></a> 
-</div>
+   <h1> Save The Kittens</h1><hr>
+   </div >
+<body>
+   <main>
+<h4><i><strong>“The smallest feline is a masterpiece.” – Leonardo da Vinci.</i></strong></h4>
 
 
-</div>
-<br>
+   <p>Unicode:</p>
+   <div class='fas'>&#xf6be;</div>
+   <i class='fas fa-cat'></i>
+   <i class='fas fa-cat' style='font-size:24px'></i>
+   <i class='fas fa-cat' style='font-size:36px'></i>
+   <i class='fas fa-cat' style='font-size:48px;color:red'></i>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  <span class="dot"></span> 
-</div>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
-
-<h2>Where Did They All Came From?</h2>
 
 <div class="row">
   <div class="column" style="background-color:Pink;">
@@ -132,7 +81,64 @@ function showSlides() {
   </div>
 </div>
 
-     <main>
+     <div>
+
+      <div class="slideshow-container">
+
+         <div class="mySlides fade">
+           <div class="numbertext">1 / 4</div>
+           <a href="https://imgur.com/GVSbZVM"><img src="https://i.imgur.com/GVSbZVM.jpg" title="source: imgur.com" style="width:20%" /></a>
+           </div>
+         
+         <div class="mySlides fade">
+           <div class="numbertext">2 / 4</div>
+           <a href="https://imgur.com/lgrA15z"><img src="https://i.imgur.com/lgrA15z.jpg" title="source: imgur.com" style="width:20%" /></a>
+         </div>
+         
+         <div class="mySlides fade">
+           <div class="numbertext">3 / 4</div>
+           <a href="https://imgur.com/YfFYl1d"><img src="https://i.imgur.com/YfFYl1d.jpg" title="source: imgur.com" style="width:20%" /></a> 
+         </div>
+         
+         <div class="mySlides fade">
+           <div class="numbertext">4 / 4</div>
+           <a href="https://imgur.com/Bi31qCF"><img src="https://i.imgur.com/Bi31qCF.jpg" title="source: imgur.com" style="width:20%" /></a> 
+         </div>
+         
+         
+         </div>
+         <br>
+         
+         <div style="text-align:center">
+           <span class="dot"></span> 
+           <span class="dot"></span> 
+           <span class="dot"></span>
+           <span class="dot"></span> 
+         </div>
+         
+         <script>
+         let slideIndex = 0;
+         showSlides();
+         
+         function showSlides() {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           let dots = document.getElementsByClassName("dot");
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+           }
+           slideIndex++;
+           if (slideIndex > slides.length) {slideIndex = 1}    
+           for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";  
+           dots[slideIndex-1].className += " active";
+           setTimeout(showSlides, 4000); // Change image every 2 seconds
+         }
+         </script>    
+         <hr>
+      </div>
 <section>
 <a name="Background"></a><br>
 <h2>Background</h2>
@@ -180,20 +186,21 @@ TNR not only helps to prevent the suffering of feral cats but also benefits the 
 Getting involved in TNR is a great way to help cats in need. You can start by contacting local animal shelters or rescue organizations to find out if they have a TNR program. If there isn't a program in your area, consider starting one yourself. TNR requires some training and resources, but there are many resources available to help you get started. By participating in TNR, you can help prevent the suffering of countless innocent kittens and improve the lives of feral cats in your community.
 
 In summary, TNR is an essential method for managing the population of feral cats and preventing the suffering of kittens and cats in the wild.
-</p>
+</p></section>
+<hr>
 		<article>
        <section>
            <a name="Amy"></a><br>
 				<h2><i class = 'fas'>&#xf1b0;</i><br>MiMi</h2>
 					<p><a href="https://imgur.com/1EJViSK"><img src="https://i.imgur.com/1EJViSK.jpg" title="source: imgur.com" /></a></p>
-<p>"This ginger cutie was saved from a pretty awful situation...."</p>
+<p>"Left to starve in a small crate with 3 of her siblings."</p>
 <br><br>
       </section><hr>
 		
         <section>
            <a name="Bug"></a>
       		<h2><i class = 'fas'>&#xf1b0;</i><br>Bug Bug</h2>
-				<p><a href="https://imgur.com/ETwctpn"><img src="https://i.imgur.com/ETwctpn.jpg" title="source: imgur.com" /></a><p>"She is the tiniest kitty."</p> <br<br>
+				<p><a href="https://imgur.com/ETwctpn"><img src="https://i.imgur.com/ETwctpn.jpg" title="source: imgur.com" /></a><p>"Found starving outside near a neighborhood pool."</p> <br<br>
 				
             </section><hr>
 				
@@ -203,38 +210,15 @@ In summary, TNR is an essential method for managing the population of feral cats
                <a name="Bunny"></a>
                <h2><i class = 'fas'>&#xf1b0;</i><br>Bunny</h2>
 					<p><a href="https://imgur.com/08qYHkO"><img src="https://i.imgur.com/08qYHkO.jpg" title="source: imgur.com" /></a></p>
-           		<p>"One crisp Fall afternoon, I was working on some homework in my second floor bedroom when I saw something rustling in the leaves below followed by a faint meowing sound. I went outside investigate when suddenly I saw a fluffy little kitten. I must have startled him him bc he lunged for the fence. He was much to small to clear it amd instead the kitten had gotten its head through the fence and couldn't get it out.
+           		<p>"Found stuck in a fence in a neighborhood with killer dogs."</p>
+            </section>
+            <hr>
 
-
-	I quickly realized that the kitten needed help, so I carefully lifted him out of the fence and took him inside with me. Our neighborhood had a few stray dogs that hunted and killed any cats they came across, so I knew inhad to help. I checked the kitten for any injuries, and thankfully, he was okay.
-
-	The kitten was so cute and playful, and I decided to name him Bunny because of his white and tan fur that reminded me of a little rabbit. Bunny was a bit scared at first, but soon he warmed up to me and became very attached. He would follow me everywhere and loved to cuddle up on my lap.
-<br>
-	As hard as I tried to find his mother or any of his siblings, I unfortunately had no luck. As the days went by, Bunny grew stronger and more confident. He loved to play with toys and would chase after anything that moved. Bunny was such a joy to have around, and I knew that I couldn't let him go.
-<br>
-	So, I decided to adopt Bunny and give him a forever home. From that day on, Bunny became a part of my family, and we had many happy adventures together. Bunny was no longer a kitten stuck in a fence but a beloved member of our family, and we were all grateful to have him in our lives."</p>
-            </section><hr>
-
-    			<section>
-               <a name="Ollie"></a>
-					<h2><i class = 'fas'>&#xf1b0;</i><br>Ollie</h2>
-					   <p><a href="https://imgur.com/cXX1nOZ"><img src="https://i.imgur.com/cXX1nOZ.jpg" title="source: imgur.com" /></a></p>
-              
-
-					<p><a href="https://imgur.com/ZGAnWDb"><img src="https://i.imgur.com/ZGAnWDb.jpg" title="source: imgur.com" /></a></p>
-					
-               <p>"Once upon a time, there was a small orange kitten who found himself lost and alone inside a gas station. He was thirsty, hungry, and scared, and meowed for help, hoping someone would hear him.
-
-Sadly, the people at the gas station didn't want to help him. Instead, they tried to chase him off, thinking he was just another stray cat. But the kitten refused to leave, and he kept meowing loudly, hoping someone would take pity on him.
-
-That's when I arrived. I heard the kitten's cries and decided to investigate. When I saw the poor little guy, I knew I had to do something to help him. I scooped him up and brought him home with me.
-
-My friend had always talked about getting a ginger kitten, and when I showed him the little orange ball of fur, he was overjoyed. He decided to adopt him on the spot, and we named him "Ollie."
-
-Ollie quickly adapted to his new home, and he became a beloved member of our little family. He was playful, affectionate, and always up for a cuddle. We loved him dearly, and he brought us so much joy and happiness.
-
-In the end, we were grateful that we had found Tiger and given him the love and care he deserved. And we knew that he was just as happy to have found us as we were to have found him."</p>
-
+    		<section>
+            <a name="Ollie"></a>
+				<h2><i class = 'fas'>&#xf1b0;</i><br>Ollie</h2>
+				<p><a href="https://imgur.com/cXX1nOZ"><img src="https://i.imgur.com/cXX1nOZ.jpg" title="source: imgur.com" /></a></p>
+      		<p>"Found less than 8 weeks old inside a gas station begging for food, they tried to shoo him out into the cold."</p>
               
               
                
@@ -256,5 +240,6 @@ In the end, we were grateful that we had found Tiger and given him the love and 
     <p>&copy; 2023 Brianna Tedlock</p>
  	</footer>
 
+    <app-root></app-root>
  </body>
 </html>
