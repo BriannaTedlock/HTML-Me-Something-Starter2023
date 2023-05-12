@@ -1,113 +1,141 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    font-family: Arial;
-    margin: 0;
-    background-color: mistyrose;
-  }
+  font-family: Arial;
+  background-image: url("https://i.imgur.com/5hB9WAm.jpg");
+}
 
-  header {
-    background-color: rosybrown;
-    padding: 20px;
-    text-align: center;
-    font-size: 50px;
-    color: mistyrose;
-  }
+p {
+  text-indent: 8%;
+  margin-right: 150px;
+  margin-left: 150px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+header {
+  background-color: rosybrown;
+  text-align: center;
+  font-size: 80px;
+  color: mistyrose;
+  text-decoration: underline;
+  padding: 1px;
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  border: 10px dotted whitesmoke;
+}
   
-  h1 {
-    text-align: center;
-    font-size: larger;
-  }
+h1 {
+  text-align: center;
+  font-size: 35px;
+  text-decoration-line: underline;
+}
 
-  h4 {
-    text-align: center;
+h3 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  background-color: rosybrown;
+  color: whitesmoke;
+  width: 50%;
+  margin-left: 25%;
+}
 
-  }
+h4 {
+  text-align: center;
+  color: darkred;
+  font-size: 20px;
+  background-color: whitesmoke;
+  margin-left: 600px;
+  width: fit-content;
+}
 
   /* Create two columns/boxes that floats next to each other */
-  nav {
-    float: left;
-    width: 15%;
-    padding: 20px;
-  }
+nav {
+  float: left;
+  width: 15%;
+  padding: 20px;
+}
   
   /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
+nav ul {
+  list-style-type: none;
+  padding: 1px;
+  background-color: whitesmoke;
+  width: 70%;
+}
   
-  article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: rosybrown;
-    color:mistyrose;
-    text-align: center;
-
-  }
+article {
+  float: left;
+  padding: 40px;
+  width: 70%;
+  background-color: rosybrown;
+  color:mistyrose;
+  text-align: center;
+  border: 2px solid whitesmoke;
+}
   
   /* Clear floats after the columns */
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: rosybrown;
-    padding: 10px;
-    text-align: center;
-    color: mistyrose;
-  }
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rosybrown;
+  padding: 10px;
+  text-align: center;
+  color: mistyrose;
+}
   
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
-    nav, article {
-      width: auto;
-      height: auto;
-    }
-  }
+@media (max-width: 600px) {
+  nav, article {
+  width: auto;
+  height: auto;
+}
+}
   
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
   
-  img {
-    vertical-align: middle;
-  }
+img {
+  vertical-align: center;
+}
   
   /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
+.container {
+  position: center;
+}
   
   /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
+.mySlides {
+  display: none;
+}
   
   /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
+.cursor {
+  cursor: pointer;
+}
   
   /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
   
   /* Position the "next button" to the right */
   .next {
@@ -121,21 +149,12 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
   /* Container for image text */
   .caption-container {
-    text-align: center;
-    background-color: #222;
+    font-size: 25px;
+    background-color: whitesmoke;
     padding: 2px 16px;
-    color: white;
+    color: salmon;
   }
   
   .row:after {
@@ -145,10 +164,11 @@ body {
   }
   
   /* Six columns side by side */
-  .column {
+.column {
     float: left;
     width: 16.66%;
-  }
+    font-size: 25px;
+}
   
   /* Add a transparency effect for thumnbail images */
   .demo {
@@ -159,8 +179,7 @@ body {
   .demo:hover {
     opacity: 1;
   }
+
+
+
   
-  img {
-    height: auto;
-    width: auto;
-  }
