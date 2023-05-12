@@ -2,6 +2,8 @@
 body {
   font-family: Arial;
   background-image: url("https://i.imgur.com/5hB9WAm.jpg");
+  margin: 8px;
+  display: block;
 }
 
 p {
@@ -36,7 +38,6 @@ h3 {
   font-size: 35px;
   font-style: italic;
   background-color: pink;
-
   background: rgba(0,0,0,0.5);
   margin-left: 400px;
   width: 50%;
@@ -45,17 +46,27 @@ h3 {
 
 h4 {
   text-align: center;
-  color: darkred;
   font-size: 20px;
-  background-color: whitesmoke;
   margin-left: 450px;
   width: fit-content;
+}
+
+#mainHeading {
+  color: red;
+}
+
+#testP {
+  font-weight: bolder;
+}
+
+.funParagraph {
+  color: green;
 }
 
   /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 15%;
+  width: 20%;
   padding: 20px;
 }
   
@@ -68,7 +79,7 @@ nav ul {
   
 article {
   float: left;
-  width: 70%;
+  width: 60%;
   background-color: rosybrown;
   color:mistyrose;
   text-align: center;
@@ -201,4 +212,10 @@ a:visited {
   color: purple;
 }
 
-  
+#kitten {
+  color: darkred;
+  text-align: center;
+  padding-left: 20%;
+  text-decoration-line: underline;
+  font-size: 25px;
+}  
