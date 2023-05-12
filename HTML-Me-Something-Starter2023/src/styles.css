@@ -35,10 +35,12 @@ h3 {
   text-align: center;
   font-size: 35px;
   font-style: italic;
-  background-color: rosybrown;
-  color: whitesmoke;
+  background-color: pink;
+
+  background: rgba(0,0,0,0.5);
+  margin-left: 400px;
   width: 50%;
-  margin-left: 25%;
+  padding: 20px;
 }
 
 h4 {
@@ -46,7 +48,7 @@ h4 {
   color: darkred;
   font-size: 20px;
   background-color: whitesmoke;
-  margin-left: 600px;
+  margin-left: 450px;
   width: fit-content;
 }
 
@@ -59,20 +61,19 @@ nav {
   
   /* Style the list inside the menu */
 nav ul {
-  list-style-type: none;
-  padding: 1px;
+  padding-right: 1px;
   background-color: whitesmoke;
   width: 70%;
 }
   
 article {
   float: left;
-  padding: 40px;
   width: 70%;
   background-color: rosybrown;
   color:mistyrose;
   text-align: center;
   border: 2px solid whitesmoke;
+  border-radius: 35px;
 }
   
   /* Clear floats after the columns */
@@ -84,7 +85,8 @@ section::after {
 
 footer {
   background-color: rosybrown;
-  padding: 10px;
+  padding: 30px;
+  margin-top: 10%;
   text-align: center;
   color: mistyrose;
 }
@@ -107,7 +109,9 @@ img {
   
   /* Position the image container (needed to position the left and right arrows) */
 .container {
-  position: center;
+  position: relative;
+  margin: auto;
+  max-width: fit-content;
 }
   
   /* Hide the images by default */
@@ -129,7 +133,7 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -153,10 +157,21 @@ img {
   .caption-container {
     font-size: 25px;
     background-color: whitesmoke;
-    padding: 2px 16px;
+    padding: 4px 16px;
     color: salmon;
+    text-align: center;
+    border: 2x dashed pink;
   }
   
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
   .row:after {
     content: "";
     display: table;
@@ -167,7 +182,6 @@ img {
 .column {
     float: left;
     width: 16.66%;
-    font-size: 25px;
 }
   
   /* Add a transparency effect for thumnbail images */
@@ -180,6 +194,11 @@ img {
     opacity: 1;
   }
 
-
+a:link {
+  color: red;
+}
+a:visited {
+  color: purple;
+}
 
   
